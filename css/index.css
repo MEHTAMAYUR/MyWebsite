@@ -21,7 +21,7 @@
         font-family: 'Poiret One', cursive;
   }
 
-  #name:hover, #backbutton:hover{
+  #name:hover, #backbutton:hover ,#menu span:hover{
         cursor: pointer; 
         cursor: hand;
   }
@@ -31,13 +31,66 @@
         padding-left: 2rem;
         padding-top: 0rem;
         opacity: 0.6;
-        /*display: none;*/
-   }  
+        display: none;
+  }  
 
-    #backbutton:hover {
-        opacity: 1;
+  #backbutton:hover {
+    opacity: 1;
+  }
+
+  #menu {
+    margin-top: 1rem;
+    font-size: 2rem;
+    font-family: 'Poiret One', cursive;
+  }
+ 
+  #links {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 4rem;
+        padding-bottom: 2rem;
       }
 
+  #links img{
+ 	height: 4rem
+  }
+
+
+   /*  SECTIONS  */
+    #developing{
+    	display: none;
+    }
+    
+      .section {
+        clear: both;
+        padding: 1em 2em;
+        margin: 1em 2em;
+      }     
+
+      /*  GROUPING  */
+      .group:before,
+      .group:after { content:""; display:table; }
+      .group:after { clear:both;}
+      .group { zoom:1; /* For IE 6/7 */ }
+
+      /*  COLUMN SETUP  */
+      .col {
+        float:left;
+        margin: 1% 0 1% 1.6%;
+      }
+      .col:first-child { margin-left: 0; }
+
+
+       #developing h3 {
+        text-align: center;
+        border-bottom: 1px solid #607476;
+        padding-bottom: 0.5rem;
+      }
+
+      /*  GRID OF THREE  */   
+      .span3 { width: 32.26%; }
 
   /* cyrillic */
 @font-face {
