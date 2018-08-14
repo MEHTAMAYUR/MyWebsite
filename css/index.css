@@ -1,7 +1,8 @@
  
  html {
         background: #F7B733	;
-        color: #FFFFFF;       
+        color: #FFFFFF;  
+        font-family: 'Raleway', sans-serif;  
       }
 
 
@@ -61,36 +62,96 @@
    /*  SECTIONS  */
     #developing{
     	display: none;
+      color: #607476;
     }
     
-      .section {
-        clear: both;
-        padding: 1em 2em;
-        margin: 1em 2em;
-      }     
+    .section {
+      clear: both;
+      padding: 1em 2em;
+      margin: 1em 2em;        
+    }     
 
-      /*  GROUPING  */
-      .group:before,
-      .group:after { content:""; display:table; }
-      .group:after { clear:both;}
-      .group { zoom:1; /* For IE 6/7 */ }
+    /*  GROUPING  */
+    .group:before,
+    .group:after { content:""; display:table; }
+    .group:after { clear:both;}
+    .group { zoom:1; /* For IE 6/7 */ }
 
-      /*  COLUMN SETUP  */
-      .col {
-        float:left;
-        margin: 1% 0 1% 1.6%;
+    /*  COLUMN SETUP  */
+    .col {
+      float:left;
+      margin: 1% 0 1% 1.6%;
+    }
+    .col:first-child { margin-left: 0; }
+
+
+     #developing h3 {
+      text-align: center;
+      border-bottom: 1px solid #607476;
+      padding-bottom: 0.5rem;
+    }
+
+    /*  GRID OF THREE  */   
+    .span3 { width: 32.26%; }
+
+    .box{
+      width: 22rem;
+      padding: 1rem;
+      overflow: hidden;
+    }
+
+    .box img {
+      margin-right: 1rem;
+      float: left;
+      width: 5rem;
+      vertical-align: center;
+    }
+
+    .box p{
+      margin: 0.1rem;
+    }
+
+    .boxheading {
+      font-size: 1em;
+      font-weight: 900;
+    }
+
+    p {
+      font-size: 0.9rem;
+    }
+
+    @media screen and (max-width: 1024px) and (min-width: 321px){
+      .span3 { width: 100%;}
+      .section {         
+        padding: 0em 0em;
+        margin: 0em 0em;         
+       }   
+       .col {
+       float:none;
+       margin:0;
+      }      
+      .box{
+       width: 21rem;               
+       display:block;margin:0 auto;        
+      }        
+       
+    }
+
+   @media screen and (max-width: 320px){
+      .span3 { width: 100%;}
+      .section {          
+        padding: 0em 0em;
+        margin: 0em 0em;         
+       } 
+       .col {
+       float:none;
+       margin:0;
+      }           
+      .box{
+       width: 19rem;         
       }
-      .col:first-child { margin-left: 0; }
+    } 
 
-
-       #developing h3 {
-        text-align: center;
-        border-bottom: 1px solid #607476;
-        padding-bottom: 0.5rem;
-      }
-
-      /*  GRID OF THREE  */   
-      .span3 { width: 32.26%; }
 
   /* cyrillic */
 @font-face {
